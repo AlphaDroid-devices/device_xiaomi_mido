@@ -122,3 +122,5 @@ wifi.interface=wlan0
 
 # Wifi-Display
 persist.sys.wfd.virtual=0
+
+persist.sys.radio.force_lte_ca=true
