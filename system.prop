@@ -103,6 +103,9 @@ persist.vendor.recovery_update=false
 # ScalarConfig
 vendor.display.disable_scaler=1
 
+# Sched
+sys.use_fifo_ui=1
+
 # Shutdown
 ro.build.shutdown_timeout=2
 
