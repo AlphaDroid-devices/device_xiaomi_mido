@@ -94,6 +94,7 @@ vendor.vidc.disable.split.mode=1
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Radio
+persist.sys.radio.force_lte_ca=true
 persist.radio.multisim.config=dsds
 persist.vendor.data.iwlan.enable=true
 persist.vendor.radio.add_power_save=1
