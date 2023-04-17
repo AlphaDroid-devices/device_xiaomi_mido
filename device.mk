@@ -425,11 +425,11 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
-    android.system.net.netd@1.1.vendor:64 \
-    libcld80211:64 \
-    libwpa_client:64 \
+    android.system.net.netd@1.1.vendor \
+    libcld80211 \
+    libwpa_client \
     hostapd \
-    libwifi-hal-qcom:64 \
+    libwifi-hal-qcom \
     TetheringConfigOverlay \
     WifiOverlay \
     wpa_supplicant \
