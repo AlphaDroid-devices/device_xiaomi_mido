@@ -194,8 +194,8 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4-service.clearkey \
-    android.hardware.drm@1.4.vendor:64
+    android.hardware.drm@1.4.vendor:64 \
+    android.hardware.drm-service.clearkey
 
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/configs/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml
@@ -425,11 +425,11 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
-    android.system.net.netd@1.1.vendor \
-    libcld80211 \
-    libwpa_client \
+    android.system.net.netd@1.1.vendor:64 \
+    libcld80211:64 \
+    libwpa_client:64 \
     hostapd \
-    libwifi-hal-qcom \
+    libwifi-hal-qcom:64 \
     TetheringConfigOverlay \
     WifiOverlay \
     wpa_supplicant \
