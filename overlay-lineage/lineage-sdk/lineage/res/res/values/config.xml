@@ -67,4 +67,13 @@
         <item>com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver</item>
         <item>com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver</item>
     </string-array>
+    
+        <!-- Defines the actions shown in advanced reboot submenu -->
+    <string-array name="config_restartActionsList">
+        <item>restart</item>
+        <item>restart_recovery</item>
+        <item>restart_bootloader</item>
+        <item>restart_fastboot</item>
+      	<item>restart_systemui</item>
+    </string-array>
 </resources>
