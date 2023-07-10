@@ -7,6 +7,10 @@ genfscon sysfs   /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-02/200f000
 genfscon sysfs   /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-02/200f000.qcom,spmi:qcom,pmi8950@2:bcl@4200                           u:object_r:sysfs_battery_supply:s0
 genfscon sysfs   /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-02/200f000.qcom,spmi:qcom,pm8953@0:qcom,pm8953_rtc                     u:object_r:sysfs_rtc:s0
 
+# KProfiles
+genfscon sysfs /module/kprofiles/parameters/auto_kprofiles u:object_r:sysfs_kprofiles:s0
+genfscon sysfs /module/kprofiles/parameters/kp_mode u:object_r:sysfs_kprofiles:s0
+
 # Touchscreen
 genfscon proc /touchpanel                                             u:object_r:proc_touchpanel:s0
 
