@@ -92,6 +92,7 @@ vendor.vidc.disable.split.mode=1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.hwui.render_ahead=10
 
 # Radio
 persist.sys.radio.force_lte_ca=true
