@@ -125,3 +125,14 @@ wifi.interface=wlan0
 persist.sys.wfd.virtual=0
 
 persist.sys.radio.force_lte_ca=true
+
+# Fling Velocity
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+ro.vendor.qti.cgroup_follow.enable=true
+persist.vendor.qti.inputopts.enable=true
+persist.vendor.qti.inputopts.movetouchslop=0.6
+ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
+
+# Cached app compaction
+persist.device_config.activity_manager.use_compaction=true
