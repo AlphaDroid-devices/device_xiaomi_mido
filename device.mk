@@ -299,10 +299,6 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl:64 \
     android.hardware.keymaster@3.0-service
 
-# KProfiles
-PRODUCT_PACKAGES += \
-    KProfiles
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi_mido
