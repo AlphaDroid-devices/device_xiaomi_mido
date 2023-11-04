@@ -18,6 +18,10 @@ $(call inherit-product, vendor/xiaomi/mido/mido-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 $(call inherit-product, vendor/xiaomi/mido/google/google.mk)
 
+# Apex
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+OVERRIDE_PRODUCT_COMPRESSED_APEX := false
+
 # Call the ViperFX Config
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
