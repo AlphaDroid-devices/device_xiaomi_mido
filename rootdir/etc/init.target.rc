@@ -160,9 +160,6 @@ on charger
     start vendor.power_off_alarm
     restart thermal-engine
 
-on boot
-    chown system system /sys/kernel/hbtp/display_pwr
-
 # Fast Charge
     chown system system /sys/class/power_supply/battery/restricted_charging
     chmod 0666 /sys/class/power_supply/battery/restricted_charging
