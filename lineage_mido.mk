@@ -24,21 +24,10 @@ $(call inherit-product, device/xiaomi/mido/device.mk)
 # Inherit some common Alphadroid stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_ENABLE_BLUR := true
-TARGET_EXCLUDES_AUDIOFX := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# GAPPS
-WITH_GAPPS := true
-
-# Maintainer Flags
-ALPHA_MAINTAINER := KamiKaonashi
-ALPHA_BUILD_TYPE := Official
-
-# Debugging Flags
-TARGET_INCLUDE_MATLOG := false
-TARGET_DEFAULT_ADB_ENABLED := false
+TARGET_DISABLE_EPPE := true
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_64_BIT_APPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
@@ -52,7 +41,7 @@ BOARD_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="husky-user 14 UD1A.230803.001/10808477 release-keys"
+    PRIVATE_BUILD_DESC="husky-user 14 UD1A.231105.004/11010374 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "google/husky/husky:14/UD1A.230803.041/10808477:user/release-keys"
+BUILD_FINGERPRINT := google/husky/husky:14/UD1A.231105.004/11010374:user/release-keys

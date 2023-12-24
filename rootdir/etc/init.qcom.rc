@@ -289,7 +289,7 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqb
     user root
     group root
 
-on charger
+on property:init.svc.vendor.charger=running
     start vendor.qcom-post-boot
 
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service

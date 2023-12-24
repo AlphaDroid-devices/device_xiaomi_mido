@@ -1,6 +1,9 @@
 get_prop(system_server, userspace_reboot_config_prop)
 get_prop(system_server, userspace_reboot_exported_prop)
 
+# Allow system_server to get App Zygote PGID
+allow system_server app_zygote:process getpgid;
+
 # power
 allow system_server sysfs_battery_supply:file { read open getattr };
 

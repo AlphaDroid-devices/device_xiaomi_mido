@@ -9,6 +9,9 @@
 /dev/socket/fpce(/.*)?                          u:object_r:fpce_socket:s0
 /sys/devices/(platform)?/soc/soc:fpc1020(/.*)?  u:object_r:fpc_sysfs:s0
 
+# Fastcharge HAL
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.fastcharge@[0-9]\.[0-9]-service\.xiaomi_mido         u:object_r:hal_lineage_fastcharge_default_exec:s0
+
 # Glove Mode
 /sys/class/tp_glove/device(/.*)?		  u:object_r:proc_touchpanel:s0
 /sys/devices/virtual/tp_glove(/.*)?		  u:object_r:proc_touchpanel:s0

@@ -37,3 +37,6 @@ persist.sys.io.scheduler=bfq
 
 # IMS
 ro.telephony.block_binder_thread_on_incoming_calls=false
+
+# Declare use of spatial audio
+ro.audio.spatializer_enabled=true

@@ -45,3 +45,6 @@ persist.vendor.slm.             u:object_r:vendor_slm_prop:s0
 persist.sys.dynamic.nv          u:object_r:vendor_wifi_prop:s0
 persist.vendor.wlan             u:object_r:vendor_wifi_prop:s0
 vendor.wlan.                    u:object_r:vendor_wifi_prop:s0
+
+# Fastcharge HAL
+persist.vendor.sec.fastchg_enabled              u:object_r:vendor_fastcharge_prop:s0
