@@ -152,6 +152,11 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     user root
     group system wakelock
 
+# Fast Charge
+on boot
+    chown system system /sys/class/power_supply/battery/restricted_charging
+    chmod 0666 /sys/class/power_supply/battery/restricted_charging
+
 on charger
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
@@ -159,10 +164,6 @@ on charger
     start vendor.hvdcp_opti
     start vendor.power_off_alarm
     restart thermal-engine
-
-# Fast Charge
-    chown system system /sys/class/power_supply/battery/restricted_charging
-    chmod 0666 /sys/class/power_supply/battery/restricted_charging
 
 # access permission for wlan
     chown system system /mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin
