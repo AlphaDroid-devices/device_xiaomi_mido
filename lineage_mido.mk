@@ -28,6 +28,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_DISABLE_EPPE := true
 TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_64_BIT_APPS := true
+TARGET_DEBLOAT := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido

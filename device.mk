@@ -391,6 +391,12 @@ PRODUCT_PACKAGES += \
     init.uclamp.rc \
     ueventd.qcom.rc
 
+# Remove unwanted packages
+ifeq ($(TARGET_DEBLOAT),true)
+PRODUCT_PACKAGES += \
+    RemovePackages    
+endif
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
