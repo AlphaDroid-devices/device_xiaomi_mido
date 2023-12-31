@@ -30,6 +30,13 @@ TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_DEBLOAT := true
 
+# Maintainer Flags
+ALPHA_MAINTAINER := KamiKaonashi
+ALPHA_BUILD_TYPE := Official
+
+# Gapps flag
+WITH_GMS := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
 PRODUCT_NAME := lineage_mido
